@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "http://127.0.0.1:8000/hrmsapi";
+const BASE_URL = "https://111arpit1.pythonanywhere.com/";
 
 export const getEmployees = async () => {
   return axios.get(`${BASE_URL}/employees/`);
