@@ -1,0 +1,14 @@
+import Sidebar from "./Sidebar";
+
+const Layout = ({ children }:any) => {
+  return (
+    <div style={{ display: "flex", minHeight: "100vh" }}>
+      <Sidebar />
+      <div style={{ flex: 1, padding: "2rem" }}>
+        {children}
+      </div>
+    </div>
+  );
+};
+
+export default Layout;
