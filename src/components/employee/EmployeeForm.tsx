@@ -12,7 +12,7 @@ const EmployeeForm = ({fetchEmployees}:any) => {
   });
 
   const [loading, setLoading] = useState(false);
-  const [message, setMessage] = useState("");
+//   const [message, setMessage] = useState("");
 
   const handleChange = (e:any) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -21,12 +21,12 @@ const EmployeeForm = ({fetchEmployees}:any) => {
   const handleSubmit = async (e: any) => {
     e.preventDefault();
     setLoading(true);
-    setMessage("");
+    // setMessage("");
 
     try {
       await addEmployee(form);
 
-      setMessage("Employee added successfully ✅");
+    //   setMessage("Employee added successfully ✅");
 
       // reset form
       setForm({
@@ -40,7 +40,7 @@ const EmployeeForm = ({fetchEmployees}:any) => {
 
     } catch (error) {
       console.error(error);
-      setMessage("Failed to add employee ❌");
+    //   setMessage("Failed to add employee ❌");
     } finally {
       setLoading(false);
     }
@@ -85,6 +85,7 @@ const EmployeeForm = ({fetchEmployees}:any) => {
        
     </div>
     </form>
+    
   );
 };
 

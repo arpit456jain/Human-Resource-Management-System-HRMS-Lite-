@@ -6,7 +6,7 @@ import { Column } from 'primereact/column';
 import { Button } from "primereact/button"; 
 
 import { deleteEmployee } from "../../service/api";
-const EmployeeTable = ({ employees,loading,error, fetchEmployees }:any) => {
+const EmployeeTable = ({ employees, fetchEmployees }:any) => {
   
 
    const handleDelete = async (rowData: any) => {
